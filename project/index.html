@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1> Welcome To javascript</h1>
+    <div class="container">
+        <div class="search">
+            <input 
+              type="text" 
+              placeholder="Enter your city name"
+             />
+             <button class="btn">
+                <img
+                  src="https://www.freeiconspng.com/thumbs/flat-icon-png/flat-search-find-icon-13.png"
+                  alt="search-btn"
+                  >
+             </button>
+        </div>
+        <div class="weather-img">
+            <img 
+               src="https://www.freeiconspng.com/thumbs/weather-icon-png/weather-icon-png-2.png"
+               alt="weather-img"
+            >
+            <h1>27°C</h2>
+            <h2>Delhi</h2>
+        </div>
+        <div class="info">
+            <div class="title">
+                <img
+                    class="humidity"
+                    src="https://cdn-icons-png.flaticon.com/512/4005/4005831.png" 
+                    alt="humidity_img"
+                >
+                <div class="humide">
+                    <h3>30%</h3>
+                    <h5>Humidity</h5>
+                </div>
+            </div>
+            <div class="title">
+                <img
+                    class="wind-speed"
+                    src="https://cdn-icons-png.flaticon.com/512/2011/2011448.png" 
+                    alt="wind_img"
+                >
+                <div class="w_speed">
+                    <h3>5.66 km/h</h3>
+                    <h5>wind speed</h5>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 <script src="./index.js"></script>
