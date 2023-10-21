@@ -8,6 +8,10 @@ function myFunc ()  {
     weather_info(city)
 }
 
+let w_info = document.querySelector(".w_info")
+w_info.style.display = "none";
+
+
 const weather_info = async(city) =>{
     try{
       let data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
@@ -21,6 +25,15 @@ const weather_info = async(city) =>{
 }
 
 const append = (data) => {
+console.log({1:data.cod})
+ if(data.cod == 404){
+    let w_info = document.querySelector(".w_info")
+    w_info.style.display = "none";
+
+ }else{
+    let w_info = document.querySelector(".w_info")
+    w_info.style.display = "inline";
+   
     let name = document.querySelector(".weather-img>h2")
     name.textContent = data.name;
 
@@ -32,5 +45,5 @@ const append = (data) => {
     
     let w_speed = document.querySelector(".w_speed>h3")
     w_speed.innerText = `${data.wind.speed} km/h`
-
+ }
 }
