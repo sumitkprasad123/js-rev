@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+.box>form{
+    border:1px solid green;
+    width:30%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:20px;
+}
+input,button{
+    padding:10px;
+}
