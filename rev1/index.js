@@ -1,4 +1,4 @@
-// constructer function
+// constructer function for creating object
 function Student(n,c,u,i,b){
     this.name = n;
     this.course = c;
