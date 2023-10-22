@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Sort items with price</h2>
+        <div id="sort">
+            <button onClick="LH()">Sort LH</button>
+            <button onClick="HL()">Sort HL</button>
+        </div>
+        <div class="search">
+            <h2>Search :</h2>
+            <input 
+               type="text" 
+               placeholder="Enter the product name"
+               id="query"
+               oninput="search()"
+            >
+            
+        </div>
+        <div class="container"></div>
+       
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
