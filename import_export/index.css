@@ -1,7 +1,10 @@
+/* for appling in whole page */
 *{
     margin:0px;
     padding:0px;
 }
+
+/* for navbar */
 .navbar{
     padding:10px;
     display: flex;
@@ -19,6 +22,7 @@
     color:white;
 }
 
+/* for product container */
 .data_container{
     width:90%;
     margin:auto;
