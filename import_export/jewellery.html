@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="./index.css" >
+</head>
+<body>
+    <div class="nav_container"></div>
+    <div class="data_container"></div>
+    
+</body>
+</html>
+<script type="module">
+    // import for navbar
+    import Navbar from "./navbar.js"
+    let nav_container = document.querySelector(".nav_container")
+    nav_container.innerHTML = Navbar()
+
+    // import for data
+    import { getData,append } from "./append_data.js"
+    let data_container = document.querySelector(".data_container")
+    
+    // for getting the electronic items data
+    let data = await getData("https://fakestoreapi.com/products/category/jewelery")
+    // for show the electronic data in dom
+    append(data,data_container)
+
+</script>

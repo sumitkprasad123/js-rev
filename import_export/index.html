@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import and Export</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="nav_container"></div>
+    <div class="data_container"></div>
+    
+</body>
+</html>
+<script type="module">
+    import Navbar from "./navbar.js"
+    let nav_container = document.querySelector(".nav_container")
+    nav_container.innerHTML = Navbar()
+
+    // import append and data
+    import {getData,append} from "./append_data.js"
+    let data_container = document.querySelector(".data_container")
+    let res = await getData("https://fakestoreapi.com/products")
+   
+    append(res,data_container)
+
+</script>
