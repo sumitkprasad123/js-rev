@@ -1,13 +1,21 @@
+body{
+    background-color: aquamarine;
+    
+}
 .container{
-    border:1px solid balck;
+    border:2px solid #ccc;
+    background-color: antiquewhite;
+    width:35%;
+    margin:auto;
+    margin-top: 60px;
     padding:20px;
 }
-.container>p{
 
-}
 .btn_container{
     display: flex;
+    justify-content: center;
     gap:5px;
+    margin-top: 40px;
 }
 button{
     border:none;
@@ -15,4 +23,5 @@ button{
     background-color: rgb(222, 48, 48);
     color:white;
     cursor: pointer;
+    font-size: 1.1rem;
 }
