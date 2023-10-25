@@ -1,0 +1,18 @@
+.container{
+    border:1px solid balck;
+    padding:20px;
+}
+.container>p{
+
+}
+.btn_container{
+    display: flex;
+    gap:5px;
+}
+button{
+    border:none;
+    padding:10px;
+    background-color: rgb(222, 48, 48);
+    color:white;
+    cursor: pointer;
+}
